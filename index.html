@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter Readability Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Chapter Readability Analyzer</h1>
+    <p class="subtitle">Paste a chapter below to check readability and find the five hardest sentences.</p>
+
+    <textarea id="chapterInput" placeholder="Paste your chapter here..."></textarea>
+    <button id="analyzeBtn">Analyze Chapter</button>
+
+    <section id="results" class="results hidden">
+      <div class="cards">
+        <div class="card">
+          <span>Readability Score</span>
+          <strong id="score">—</strong>
+          <small id="level">—</small>
+        </div>
+        <div class="card">
+          <span>Words</span>
+          <strong id="wordCount">0</strong>
+        </div>
+        <div class="card">
+          <span>Sentences</span>
+          <strong id="sentenceCount">0</strong>
+        </div>
+      </div>
+
+      <h2>Five Hardest Sentences</h2>
+      <div id="hardestSentences" class="sentence-list"></div>
+
+      <h2>Chapter Preview</h2>
+      <div id="preview" class="preview"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
